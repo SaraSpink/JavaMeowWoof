@@ -2,30 +2,29 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Talk to the web page</title>
+    <title>cat versus dog</title>
   </head>
   <body>
     <div class="container">
-      <h1> Talk to the web page </h1>
-      <p>Click a button to say something to the webpage. See what it says back!</p>
+      <h1> What do they sound like </h1>
+      <p>Click the button to see the sound!</p>
 
-      <button class="btn btn-primary" id="hello">Say "hello"</button>
-      <button class="btn btn-inverse" id="goodbye">Say "goobye"</button>
-      <button class="btn btn-danger" id="stop">Say "stop copying me!"</button>
+      <button class="btn btn-primary" id="cat">Cat sounds like</button>
+      <button class="btn btn-inverse" id="dog">Dog sounds like</button>
 
       <div class="row">
         <div class="col-md-6">
-          <h2>You said:</h2>
-          <ul class="unstyled">
+          <h2>Looks Like</h2>
+          <ul class="unstyled" id="look">
 
           </ul>
         </div>
           <div class="col-md-6">
-            <h2>The web page said back:</h2>
-            <ul class="unstyled">
+            <h2>Sounds Like</h2>
+            <ul class="unstyled" id="sound">
 
             </ul>
           </div>

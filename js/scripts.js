@@ -1,13 +1,25 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul").prepend("<li>Hello!</li>");
+  $("button#cat").click(function() {
+    $("ul#look").prepend("<li><img src='img/cat.jpg'></li>");
+    $("ul#sound").prepend("<li>meow!</li>");
+
+    $("ul#look").children("li").first().click(function() {
+      $(this).remove();
+    });
+    $("ul#sound").children("li").first().click(function() {
+      $(this).remove();
+    });
   });
 
-  $("button#goodbye").click(function() {
-    $("ul").prepend("<li>Goodbye!</li>");
-  });
+  $("button#dog").click(function() {
+    $("ul#look").prepend("<li><img src='img/dog.jpg'></li>");
+    $("ul#sound").prepend("<li>ouaf ouaf!</li>");
 
-  $("button#stop").click(function() {
-    $("ul").prepend("<li>Stop copying me!</li>");
+    $("ul#look").children("li").first().click(function() {
+      $(this).remove();
+    });
+    $("ul#sound").children("li").first().click(function() {
+      $(this).remove();
+    });
   });
 });
